@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-   int c;
+   int c=0;
    int arr[]={1,2,3,4,5,6,7,8,9,0};
    cout<<"The array is: ";
    for(auto i: arr)
