@@ -1,17 +1,40 @@
-#include<iostream>    
-#include<array> 
+# include <iostream>
 using namespace std;
-int main()
-{
-   int c;
-   int arr[]={1,2,3,4,5,6,7,8,9,0};
-   cout<<"The array is: ";
-   for(auto i: arr)
-   {
-   		cout<<i<<" ";
-   		c++;
-   }
-   cout<<"\nThe length of the given Array is: "<<c;
-   
-   return 0;
+
+int main() {
+
+  char op;
+  float num1, num2;
+
+  cout << "Enter operator: +, -, *, /: ";
+  cin >> op;
+
+  cout << "Enter two operands: ";
+  cin >> num1 >> num2;
+
+  switch(op) {
+
+    case '+':
+      cout << num1 << " + " << num2 << " = " << num1 + num2;
+      break;
+
+    case '-':
+      cout << num1 << " - " << num2 << " = " << num1 - num2;
+      break;
+
+    case '*':
+      cout << num1 << " * " << num2 << " = " << num1 * num2;
+      break;
+
+    case '/':
+      cout << num1 << " / " << num2 << " = " << num1 / num2;
+      break;
+
+    default:
+      // If the operator is other than +, -, * or /, error message is shown
+      cout << "Error! operator is not correct";
+      break;
+  }
+
+  return 0;
 }
